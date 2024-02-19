@@ -21,4 +21,3 @@ function toUpperCaseAndDisplay(inputString) {
 }
 
 toUpperCaseAndDisplay("I'm MrBinola");
-

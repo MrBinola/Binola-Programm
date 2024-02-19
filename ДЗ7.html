@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Перевірка імені</title>
+<style>
+  .error {
+    color: rgb(255, 242, 0);
+  }
+</style>
+</head>
+<body>
+
+<h2>Перевірка імені</h2>
+
+<form id="nameForm">
+  <label for="name">Ім'я (від 8 до 20 символів):</label><br>
+  <input type="text" id="name" name="name"><br>
+  <span id="nameError" class="error"></span><br><br>
+  <input type="submit" value="Перевірити">
+</form>
+
+<script>
+  document.getElementById("nameForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+  
+    var nameInput = document.getElementById("name");
+    var nameError = document.getElementById("nameError");
+    var name = nameInput.value.trim();
+
+    if (name.length < 8 || name.length > 20) {
+      nameError.textContent = "Ім'я повинно містити від 8 до 20 символів.";
+      nameInput.focus();
+    } else {
+      nameError.textContent = "";
+      alert("Ім'я введено коректно: " + name);
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -8,3 +8,5 @@ function checkName() {
       alert('False');
     }
   }
+
+  console.log("hello world")
