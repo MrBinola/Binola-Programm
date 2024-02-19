@@ -1,0 +1,13 @@
+.K{
+    margin: 20px;
+    padding: 40px;
+    border: 10px solid blue
+}
+
+@media (max-width: 380px){
+    .K{
+        margin: 20px;
+        padding: 40px;
+        border: 40px solid rgb(166, 255, 0)
+    }
+}

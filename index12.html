@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Теми у CSS3</title>
+        <style>
+        :root{
+          --panel-bg-color: #dfe4ea;
+          --container-bg-color: #f1f2f6;
+          --text-color: #2f3542;
+        }
+        :root[theme='dark'] {
+          --panel-bg-color: #2f3542;
+          --container-bg-color: #57606f;
+          --text-color: #ced6e0;
+        }
+        * {
+          margin: 0;
+        }
+        html{
+          height: 100%;
+        }
+        body{
+          height: 100%;
+          font-family: Verdana;
+          display: flex;
+          flex-direction: column;
+          color: var(--text-color);
+        }
+        nav{
+          padding: 1.2rem;
+          background: var(--panel-bg-color);
+        }
+        nav a{
+            padding: 1.1rem;
+        }
+        .container{
+          flex: 1;
+          padding: 1rem;
+          background: var(--container-bg-color);
+        }
+        footer{
+          padding: 1rem;
+          background: var(--panel-bg-color);
+        }
+        input[type=button] {
+          color: var(--text-color);
+          background: var(--panel-bg-color);
+           
+          padding: 0.3rem;
+          margin: 0.2rem;
+          font-size: 1rem;
+        }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar"><a>Головна</a>|<a>Контакти</a>|<a>Про сайт</a></nav>
+        <div class="container">
+          <div>
+            <input type="button" value="Toggle" id="toggle-theme" />
+          </div>
+            <h2 class="title">Заголовок</h2>
+            <p class="content">Основний вміст...</p>
+        </div>
+        <footer>
+          <p>Всі права дозволені ©2024$$$</p>
+        </footer>
+        <script>
+        const toggleBtn = document.querySelector("#toggle-theme");
+        toggleBtn.addEventListener("click", function() {
+          if(document.documentElement.hasAttribute("theme")){
+            document.documentElement.removeAttribute("theme");
+          }
+          else{
+            document.documentElement.setAttribute("theme", "dark");
+          }
+        });
+        </script>
+    </body>
+</html>
+
+
+

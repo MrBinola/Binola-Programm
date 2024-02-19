@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flexbox в CSS3</title>
+        <style>
+            .flex-container {
+                display: flex;
+                border:1px #ccc solid;
+                width:400px;
+            }
+            .flex-item {
+                text-align:center;
+                font-size: 1em;
+                padding: 1.2em;
+                color: white;
+            }
+            .item1 {background-color: #675BA7; flex-basis: 200px; flex-shrink:1;}
+            .item2 {background-color: #9BC850; flex-basis: 200px; flex-shrink:2;}
+            .item3 {background-color: #A62E5C; flex-basis: 200px; flex-shrink:3;}
+        </style>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="flex-item item1">Flex Item 1</div>
+            <div class="flex-item item2">Flex Item 2</div>
+            <div class="flex-item item3">Flex Item 3</div>
+        </div>
+</html>

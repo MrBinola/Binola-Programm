@@ -1,0 +1,124 @@
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.a{
+    color: rgb(0, 51, 255);
+    background-color: rgb(255, 234, 0);
+    box-shadow: 0 16px 32px 0 rgb(10, 154, 194);
+    border-radius: 30px;
+    outline: chartreuse dashed;
+}
+
+.dd{
+    width: 30%;
+    margin: 10px 0px 0px 0px;
+    background-color: rgb(0, 34, 255);
+    box-shadow: 0 16px 32px 0 rgb(51, 255, 0);
+    border-radius: 50px;
+}
+.drd{
+    width: 30%;
+    margin: 10px 0px 0px 670px;
+}
+
+.rr{
+    color: rgb(255, 204, 0);
+    background-color: rgb(0, 26, 255);
+    border-radius: 20px;
+    outline: chocolate dashed;
+    box-shadow: 0 16px 32px 0 rgb(36, 145, 200);
+}
+
+.t{
+    color: white;
+}
+
+.y{
+    color: white;
+}
+
+.u{
+    color: white;
+}
+
+.b{
+    color: white;
+}
+
+.o{
+    color: white;
+}
+
+.p{
+    color: white;
+}
+
+.k{
+    color: white;
+}
+
+.l{
+    color: white;
+}
+
+.r{
+    color: white;
+}
+
+.v{
+    color: white;
+}
+
+.animated-button {
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 15px 30px;
+    overflow: hidden;
+    border: 2px solid;
+    border-bottom-width: 4px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgb(30, 56, 255);
+    background: rgba(255, 255, 255, 1);
+    transition: color .3s, background .5s;
+  }
+  .animated-button:hover {
+    animation: stripes .75s infinite linear;
+    background: linear-gradient(45deg, rgba(30, 255, 188, 1) 25%, rgba(255, 255, 255, 1) 25%, rgba(255, 255, 255, 1) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 75%, rgba(255, 255, 255, 1) 75%, rgba(255, 255, 255, 1));
+    background-size: 10px 10px;
+    color: #ffe550;
+  }
+  @keyframes stripes {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 50px 0;
+    }
+  }
+
+  .f{
+    color: rgb(255, 0, 0);
+    background-color: greenyellow;
+    box-shadow: 0 16px 32px 0 rgb(211, 28, 4);
+    border-radius: 20px;
+    outline: cornflowerblue dashed;
+  }
+
+  .w{
+    color: white;
+    background-color: blueviolet;
+    box-shadow: 0 16px 32px 0 rgb(255, 255, 255);
+    border-radius: 30px;
+    outline: cyan dashed;
+  }
+  .uuuy{
+    color: white;
+    box-shadow: 0 16px 32px 0 rgb(0, 21, 255);
+    border-radius: 30px;
+    outline: invert;
+  }

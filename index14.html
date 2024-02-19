@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <button onclick="console.log('Clicked!')">Click Me</div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <button onclick="btn_click()">Click Me</div>
+    <script>
+    let clicks = 0;
+    function btn_click(){
+        console.log("Clicked", ++clicks);
+    }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <button id="btn">Click Me</div>
+    <script>
+    let clicksf = 0;
+    function btn_click(){
+        console.log("Clicked", ++clicks);
+    }
+    document.getElementById("btn").onclick = btn_click;
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <button id="btn">Click Me</div>
+    <script>
+    let clickst = 0;
+    function btn_click(){
+        console.log("Clicked", ++clicks);
+    }
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", btn_click);
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <button id="btn" onclick="btn_click('Button Clicked')">Click Me</button>
+    <script>
+    function btn_click(text){
+        console.log(text);
+    }
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+    <style>
+    #blueRect{
+        width:100px;
+        height:100px;
+        background-color:blue;
+    }
+    #redRect{
+        width:50px;
+        height:50px;
+        background-color:red;
+    }
+    </style>
+</head>
+<body>
+    <div id="blueRect">
+        <div id="redRect"></div>
+    </div>
+    <script>
+    const redRect = document.getElementById("redRect");
+    redRect.addEventListener("click", () => console.log("Событие на redRect"));
+     
+    const blueRect = document.getElementById("blueRect");
+    blueRect.addEventListener("click", ()=>console.log("Событие на blueRect"));
+     
+    document.body.addEventListener("click", () => console.log("Событие на body"));
+    </script>
+</body>
+</html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Імена</title>
+</head>
+<body>
+
+<button id="button1" onclick="showName('Мирослав')">Показати ім'я Мирослав</button>
+<button id="button2" onclick="showName('Віталій')">Показати ім'я Віталій</button>
+
+<p id="result"></p>
+
+<script>
+    function showName(name) {
+        document.getElementById('result').innerText = 'Ім\'я: ' + name;
+    }
+</script>
+
+</body>
+</html>

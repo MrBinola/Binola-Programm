@@ -1,0 +1,236 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+    #blueRect{
+        width:100px;
+        height:100px;
+        background-color:blue;
+    }
+    </style>
+</head>
+<body>
+<div id="blueRectet"></div>
+ 
+<script>
+function handleClick(e){
+    console.log("screenX: " + e.screenX);
+    console.log("screenY: " + e.screenY);
+    console.log("clientX: " + e.clientX);
+    console.log("clientY: " + e.clientY);
+}
+const blueRectet = document.getElementById("blueRect");
+blueRectet.addEventListener("click", handleClick);
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+    <style>
+    #blueRect{
+        width:100px;
+        height:100px;
+        background-color:blue;
+    }
+    </style>
+</head>
+<body>
+<div id="blueRect"></div>
+ 
+<script>
+const blueRect = document.getElementById("blueRect");
+const blueRectStyle = window.getComputedStyle(blueRect);
+window.addEventListener("keydown", moveRect);
+ 
+function moveRect(e){
+    const left = parseInt(blueRectStyle.marginLeft);
+    const top = parseInt(blueRectStyle.marginTop);
+     
+    switch(e.key){
+         
+        case "ArrowLeft":
+            if(left>0)
+                blueRect.style.marginLeft = left - 40 + "px";
+            break;
+        case "ArrowUp":
+            if(top>0)
+                blueRect.style.marginTop = top - 40 + "px";
+            break;
+        case "ArrowRight":
+            if(left < document.documentElement.clientWidth - 100)
+                blueRect.style.marginLeft = left + 40 + "px";
+            break;
+        case "ArrowDown":
+            if(top < document.documentElement.clientHeight - 100)
+                blueRect.style.marginTop = top + 40 + "px";
+            break;
+    }
+}
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <button id="btn">Pay</button>
+    <script>
+    const button = document.getElementById("btn");
+    const myAcc = new Account(100);
+    document.addEventListener("payment", ()=>console.log("Payment succeeded!"));
+ 
+    button.addEventListener("click", ()=>myAcc.pay(50));
+    function Account(money) {
+        _money = money;
+        this.pay=function(sum){
+            if(_money >= sum){
+                _money -= sum;
+                console.log(_money);
+ 
+                const event = new Event("payment");
+                document.dispatchEvent(event);
+            }
+        }
+    }
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+    <form id="search" name="search" action="https://google.com/search" method="get">
+        <input type="text" id="key" name="q" />
+        <input type="submit" id="send" name="send" />
+    </form>
+    <script>
+    const form = document.getElementById("search");
+    console.log(form.elements);
+    console.log(form.length);
+    console.log(form.name);
+    console.log(form.action);
+    console.log(form.method);
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+<form name="search">
+    <input type="text" name="key"></input>
+    <input type="submit" name="send" value="Отправить" />
+</form>
+<script>
+function sendForm(e){
+     
+    const keyBox = document.search.key;
+    const val = keyBox.value;
+    if(val.length<3){
+        alert("Недопустимая длина строки");
+        e.preventDefault();
+    }   
+    else
+        alert("MrBinola самий кращий ютубер на землі! Звісно можна на нього перейти!😊");
+}
+ 
+const sendButton = document.search.send;
+sendButton.addEventListener("click", sendForm);
+</script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+<form name="search">
+    <input type="text" name="key" placeholder="Введите ключ"></input>
+    <input type="button" name="print" value="Друкувати" />
+</form>
+<div id="printBlock"></div>
+<script>
+function printForm(e){
+     
+    const keyBox = document.search.key;
+    const val = keyBox.value;
+    const printBlock = document.getElementById("printBlock");
+    const pElement = document.createElement("p");
+    pElement.textContent = val;
+    printBlock.appendChild(pElement);
+}
+ 
+const printButton = document.search.print;
+printButton.addEventListener("click", printForm);
+</script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пошук</title>
+</head>
+<body>
+  <label for="searchInput">Пошук:</label>
+  <input type="text" id="searchInput" placeholder="Введіть ім'я">
+  <button onclick="checkName()">Перевірити</button>
+
+  <script src="index15.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>METANIT.COM</title>
+</head>
+<body>
+ <form name="loginForm">
+    <input type="password" name="password" />
+</form>
+<div id="printBlock"></div>
+<script>
+const passwordBox = document.loginForm.password;
+  
+function oninput(e){
+    const printBlock = document.getElementById("printBlock");
+    printBlock.textContent = e.target.value;
+} 
+passwordBox.addEventListener("input", oninput); 
+</script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkbox для мов програмування JavaScript</title>
+</head>
+<body>
+
+<h2>Виберіть мови програмування JavaScript:</h2>
+
+<form id="programmingLanguagesForm">
+  <label for="javascript"><input type="checkbox" id="javascript" name="language" value="JavaScript"> JavaScript</label><br>
+  <label for="typescript"><input type="checkbox" id="typescript" name="language" value="TypeScript"> TypeScript</label><br>
+  <label for="python"><input type="checkbox" id="python" name="language" value="Python"> Python</label><br>
+  <label for="java"><input type="checkbox" id="java" name="language" value="Java"> Java</label><br>
+  <label for="csharp"><input type="checkbox" id="csharp" name="language" value="C#"> C#</label><br>
+  <label for="cpp"><input type="checkbox" id="cpp" name="language" value="C++"> C++</label><br>
+</form>
+
+<p>Вибрані мови програмування JavaScript:</p>
+<ul id="selectedLanguages"></ul>
+
+<script>
+const form = document.getElementById("programmingLanguagesForm");
+const selectedLanguagesList = document.getElementById("selectedLanguages");
+
+form.addEventListener("change", function(event) {
+  const selectedLanguages = document.querySelectorAll('input[name="language"]:checked');
+  selectedLanguagesList.innerHTML = "";
+  selectedLanguages.forEach(function(language) {
+    const listItem = document.createElement("li");
+    listItem.textContent = language.value;
+    selectedLanguagesList.appendChild(listItem);
+  });
+});
+</script>
+
+</body>
+</html>

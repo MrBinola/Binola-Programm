@@ -1,0 +1,10 @@
+:root{
+    --text-color:50px;
+    --m: 200px;
+    --nnn: #ff4757;
+}
+
+.abc{
+    font-size: var(--m);
+    color: var(--nnn);
+}

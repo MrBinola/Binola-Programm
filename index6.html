@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flexbox в CSS3</title>
+        <style>
+             
+            .flex-container {
+                display: flex;
+                border:1px #ccc solid;
+            }
+            .flex-end{
+                justify-content: flex-end;
+            }
+            .center{
+                justify-content: center;
+            }
+            .space-between{
+                justify-content: space-between;
+            }
+            .space-around{
+                justify-content: space-around;
+            }
+            .flex-item {
+                text-align:center;
+                font-size: 1em;
+                padding: 1.5em;
+                color: white;
+            }
+            .color1 {background-color: #675BA7;}
+            .color2 {background-color: #9BC850;}
+            .color3 {background-color: #A62E5C;}
+            .color4 {background-color: #2A9FBC;}
+            .color5 {background-color: #F15B2A;}
+        </style>
+    </head>
+    <body>
+        <h3>Flex-end</h3>
+        <div class="flex-container flex-end">
+            <div class="flex-item color1">Flex Item 1</div>
+            <div class="flex-item color2">Flex Item 2</div>
+            <div class="flex-item color3">Flex Item 3</div>
+            <div class="flex-item color4">Flex Item 4</div>
+        </div>
+        <h3>Center</h3>
+        <div class="flex-container center">
+            <div class="flex-item color1">Flex Item 1</div>
+            <div class="flex-item color2">Flex Item 2</div>
+            <div class="flex-item color3">Flex Item 3</div>
+            <div class="flex-item color4">Flex Item 4</div>
+        </div>
+        <h3>Space-between</h3>
+        <div class="flex-container space-between">
+            <div class="flex-item color1">Flex Item 1</div>
+            <div class="flex-item color2">Flex Item 2</div>
+            <div class="flex-item color3">Flex Item 3</div>
+            <div class="flex-item color4">Flex Item 4</div>
+        </div>
+        <h3>Space-around</h3>
+        <div class="flex-container space-around">
+            <div class="flex-item color1">Flex Item 1</div>
+            <div class="flex-item color2">Flex Item 2</div>
+            <div class="flex-item color3">Flex Item 3</div>
+            <div class="flex-item color4">Flex Item 4</div>
+        </div>
+    </body>
+</html>
