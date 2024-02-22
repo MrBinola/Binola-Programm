@@ -20,4 +20,5 @@ const addTwoNumbers = (num1, num2) => {
 };
 
 const results = addTwoNumbers(70, 7);
-console.log(results);
+console.log(results);          
+                       
